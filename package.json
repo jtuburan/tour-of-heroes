@@ -5,11 +5,12 @@
   "description": "Example project from an angular.io guide.",
   "scripts": {
     "ng": "ng",
-    "build": "ng build --prod --aot --target=production",
+    "build": "ng build --prod",
     "start": "node server.js",
     "test": "ng test",
     "lint": "tslint ./src/**/*.ts -t verbose",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot --target=production"
   },
   "keywords": [],
   "author": "",
